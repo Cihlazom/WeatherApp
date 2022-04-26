@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InfoPerHourCollectionViewCell" customModule="Weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIK-18-N0H">
+                        <rect key="frame" x="48" y="3" width="41" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U81-C3-FPF">
+                        <rect key="frame" x="38" y="40" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Cff-Qs-KKk"/>
+                            <constraint firstAttribute="width" constant="60" id="Nuc-7q-mkb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8v-6F-ht4">
+                        <rect key="frame" x="47" y="116" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.028786587879999999" green="0.72884342209999997" blue="1" alpha="0.8980392157" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="U81-C3-FPF" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5mI-xe-NYG"/>
+                <constraint firstItem="Y8v-6F-ht4" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="6FR-SJ-yzj"/>
+                <constraint firstItem="vIK-18-N0H" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="BV9-8M-pQd"/>
+                <constraint firstAttribute="bottom" secondItem="Y8v-6F-ht4" secondAttribute="bottom" constant="3" id="VCe-y5-MBF"/>
+                <constraint firstItem="U81-C3-FPF" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="dod-na-n6W"/>
+                <constraint firstItem="vIK-18-N0H" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="suG-AB-gzR"/>
+            </constraints>
+            <size key="customSize" width="136" height="139"/>
+            <connections>
+                <outlet property="hourLabel" destination="vIK-18-N0H" id="IKK-wt-Hf2"/>
+                <outlet property="tempLabel" destination="Y8v-6F-ht4" id="eJ5-nc-0tn"/>
+                <outlet property="weatherImage" destination="U81-C3-FPF" id="RkE-Oz-F5Y"/>
+            </connections>
+            <point key="canvasLocation" x="279.71014492753625" y="143.63839285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
