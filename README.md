@@ -19,6 +19,8 @@
 
 5. Реализована навигация между экранами городов с помощью NavigationController.
 
+Для запуска проекта достаточно открыть Weather.xcodeproj в Xcode и запустить на симуляторе.
+
 ### Основной стек: 
 UIKit, UITableView, UICollectionView, URLSession, CoreData, MVP
 
